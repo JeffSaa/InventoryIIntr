@@ -1,8 +1,5 @@
 <h1>Create new Item</h1>
 
-<% unless flash.empty? %>
-	<h4>Messages:</h4>
-	<%= safe_join(flash[:notice], "<br>".html_safe) %>
-<% end %>
+<%= render "partials/flash_messages" %>
 
 <%= render 'item_form' %>
